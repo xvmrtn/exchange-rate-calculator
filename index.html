@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exchange Rate Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <img src="img/dollar.svg" alt="dollar icon" class="dollar-img" />
+    <h1>Exchange Rate Calculator</h1>
+    <p>Choose the amount and the currency to get the exchange rate</p>
+
+    <div class="calculator" id="calculator">
+      <div class="calculator__amount" id="calculator__amount">
+        <input
+          type="number"
+          min="0"
+          class="calculator__provided--amount"
+          id="calculator__provided--amount"
+        />
+      </div>
+      <div class="calculator__currency" id="calculator__currency">
+        <select
+          name="calculator__currency--id"
+          class="calculator__currency--id"
+          id="calculator__currency--id"
+        >
+          <option value="0"></option>
+        </select>
+      </div>
+      <div class="calculator__convert" id="calculator__convert">
+        <button class="calculator__convert--btn" id="calculator__convert--btn">
+          Convert
+        </button>
+      </div>
+    </div>
+
+    <div class="outcome" id="outcome"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
